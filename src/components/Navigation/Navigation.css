@@ -1,0 +1,19 @@
+header {
+    background-color: yellow;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-inline: 30px;
+}
+
+.item {
+    margin-inline: 10px;
+    text-decoration: none;
+}
+
+.item:hover {
+    background-color: gray;
+}

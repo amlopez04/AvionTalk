@@ -1,0 +1,53 @@
+/* components/Auth/Login.css */
+
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-sidebar {
+  flex: 1;
+  background-color: #5e35b1; /* MUI purple[800] */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.login-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+.login-form-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.login-paper {
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-button {
+  margin-top: 1rem;
+}
+
+.login-toggle {
+  margin-top: 1rem;
+  text-align: center;
+}
