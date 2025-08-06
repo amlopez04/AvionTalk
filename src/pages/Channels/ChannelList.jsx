@@ -102,7 +102,6 @@ const ChannelList = () => {
       const createdChannel = res.data?.data || res.data;
       console.log("Created channel data:", createdChannel);
       
-      // Always treat as success if we get here
       setNewChannel("");
       setError("");
       setSuccess(`Channel "#${newChannel}" created successfully!`);
@@ -126,14 +125,12 @@ const ChannelList = () => {
       console.error("Create channel error:", err);
       console.error("Error response:", err.response?.data);
       console.error("Error status:", err.response?.status);
-      
-      // Check if it's actually a success (sometimes API returns error but creates the channel)
+    
       if (err.response?.status === 201 || err.response?.status === 200) {
         setNewChannel("");
         setError("");
         setSuccess(`Channel "#${newChannel}" created successfully!`);
         
-        // Small delay to ensure API has processed the creation
         setTimeout(async () => {
           await fetchChannels();
         }, 500);

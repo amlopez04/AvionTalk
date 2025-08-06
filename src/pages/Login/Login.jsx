@@ -1,14 +1,14 @@
 // components/Auth/Login.jsx
 import { useState } from 'react';
 import {
-  Box, Button, TextField, Typography, Paper, FormControlLabel, Checkbox, Alert
+  Button, TextField, Typography, Paper, FormControlLabel, Checkbox, Alert
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useData } from '../../context/DataProvider';
 import './Login.css';
 
-// Use the production API URL directly
+
 const API_URL = "https://slack-api.up.railway.app";
 
 export default function Login({ onLogin }) {
